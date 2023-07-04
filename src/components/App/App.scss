@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'KharkivTone';
+    src: url(./font/kharkivtone.ttf);
+}
+
+//
+
+.app{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'KharkivTone';
+}
