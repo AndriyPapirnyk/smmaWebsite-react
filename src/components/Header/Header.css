@@ -1,0 +1,24 @@
+.header {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+.header__logo h1 {
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.header__logo h1 span {
+  color: rgb(252, 42, 99);
+}
+.header__container {
+  width: 1240px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

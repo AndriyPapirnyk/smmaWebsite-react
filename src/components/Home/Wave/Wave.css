@@ -11,7 +11,7 @@
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 192px;
+    height: 142px;
     transform: rotateY(180deg);
 }
 
