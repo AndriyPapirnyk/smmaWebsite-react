@@ -3,3 +3,12 @@
   gap: 40px;
   color: #fff;
 }
+.nav ul li {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.nav ul li:hover {
+  color: rgb(252, 42, 99);
+  text-decoration: underline;
+  transition: 0.3s;
+}

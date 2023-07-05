@@ -35,6 +35,7 @@
   margin-top: 30px;
   font-weight: 600;
   font-size: 15px;
+  cursor: pointer;
 }
 .home__main p {
   color: #fff;

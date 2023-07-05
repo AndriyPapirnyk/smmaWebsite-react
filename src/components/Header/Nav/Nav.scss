@@ -3,5 +3,14 @@
         display: flex;
         gap: 40px;
         color: #fff;
+        li{
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover{
+                color:  rgb(252, 42, 99);
+                text-decoration: underline;
+                transition: 0.3s;
+            }
+        }
     }
 }
