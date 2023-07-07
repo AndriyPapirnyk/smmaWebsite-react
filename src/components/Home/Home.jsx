@@ -1,7 +1,8 @@
 import './Home.css';
 import Wave from './Wave/Wave';
 import Header from '../Header/Header';
-import illustration from './img/illustration.png'
+// import illustration from './img/illustration.png'
+import illustration from './img/o.png';
 
 function Home() {
   return (

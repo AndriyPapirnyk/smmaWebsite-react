@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic');
+@import '../../scss/Mixins.scss';
+
+//
+
 .home{
     width: 100%;
     height: 850px;
@@ -7,27 +12,39 @@
     background-size: cover;
     position: relative;
     &__main{
-        margin-top: 80px;
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         text-shadow: 0 0 3px #333;
         img{
-            width: 500px;
+            width: 450px;
+            animation: floating 5s infinite ease-in-out;
+
+            @keyframes floating {
+                0% {
+                  transform: translate3d(0, 0, 0);
+                }
+                50% {
+                  transform: translate3d(0, -18px, 0);
+                }
+                100% {
+                  transform: translate3d(0, 0, 0);
+                }
+              }
         }
         h1{
-            font-size: 27px;
+            font-size: 33px;
             line-height: 50px;
             color: #fff;
-            letter-spacing: -0.5px;
             font-weight: 600;
+            font-family: 'Montserrat';
         }
         button{
             width: 150px;
             height: 40px;
             border: none;
-            border-radius: 3px;
+            border-radius: 20px;
             background-color: rgb(252, 42, 99);
             color: #fff;
             margin-top: 30px;
@@ -38,17 +55,13 @@
         p{
             color: #fff;
             font-size: 15px;
-            line-height: 150%;
+            line-height: 170%;
             margin-top: 20px;
         }
     }
     &__container{
-        width: 1240px;
-        height: auto;
-        display: flex;
-        // align-items: center;
-        // border: 1px solid #000;
-        align-items: center;
+        @include container();
+        justify-content: center;
     }
     
 }
