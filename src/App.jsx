@@ -3,6 +3,7 @@ import '../node_modules/reset-css/reset.css';
 import Home from './components/Home/Home';
 import Service from './components/Services/Services';
 import Subscription from './components/Subscription/Subscription';
+import Portfolio from './components/Portfolio/Portfolio';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Home/>
       <Service/>
       <Subscription />
+      <Portfolio />
     </div>
   );
 }
