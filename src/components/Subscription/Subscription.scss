@@ -1,0 +1,108 @@
+// wave
+
+//1
+
+.custom-shape-divider-top-1689086370 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1689086370 svg {
+    position: relative;
+    display: block;
+    width: calc(135% + 1.3px);
+    height: 200px;
+}
+
+.custom-shape-divider-top-1689086370 .shape-fill {
+    fill: #FFFFFF;
+}
+
+//2
+
+.custom-shape-divider-bottom-1689086596 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1689086596 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom-1689086596 .shape-fill {
+    fill: #FFFFFF;
+}
+
+// wave
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic');
+@import '../../scss/Mixins.scss';
+
+.subscription{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-image: url(../Home/backgound/background.svg);
+    background-size: cover;
+    background-position: right;
+    &__form{
+        width: auto;
+        height: 50px;
+        input{
+            height: 100%;
+            width: 350px;
+            border-radius: 30px 0 0 30px;
+            border: none;
+            outline: none;
+            font-weight: 600;
+            font-size: 15px;
+            padding: 0 0 0 20px;
+        }
+        button{
+            width: 150px;
+            height: 100%;
+            border: none;
+            border-radius: 0 30px 30px 0;
+            background-color: rgb(252, 42, 99);
+            color: #fff;
+            font-weight: 600;
+            font-size: 15px;
+            cursor: pointer;
+        }
+    }
+    &__container{
+        @include container();
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+        h1{
+            color: #FFFFFF;
+            font-family: 'Montserrat';
+            text-align: center;
+            font-weight: 700;
+            font-size: 30px;
+            letter-spacing: 1px;
+            span{
+                color: rgb(252, 42, 99);
+                &:nth-child(2){
+                    font-family: 'KharkivTone';
+                    // font-size: 28px;
+                    color: #FFFFFF;
+                }            
+            }
+        }
+    }
+}
