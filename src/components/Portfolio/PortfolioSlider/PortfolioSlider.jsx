@@ -28,7 +28,7 @@ export default function PortfolioSlider() {
           clickable: true,
         }}
         modules={[FreeMode, Pagination, Navigation]}
-        className="mySwiper"
+        className="portfolio__swiper"
       >
         <SwiperSlide>Slide 1</SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
